@@ -1361,7 +1361,9 @@ input, select, textarea {
 				}
 
 				#header nav ul li a {
-					display: flex;
+					display: flex; /* new before block*/
+					align-items: center; /* Aligns text vertically */
+    					justify-content: center; /* Aligns text horizontally */
 					min-width: 7.5rem;
 					height: 2.75rem;
 					line-height: 2.75rem;
