@@ -1477,6 +1477,10 @@ input, select, textarea {
 					flex-direction: column;
 					min-width: 10rem;
 					max-width: 100%;
+					display: flex;
+					align-items: center; /* Add this line to vertically center the items */
+					/* ... other properties ... */
+}
 				}
 
 					#header nav ul li {
