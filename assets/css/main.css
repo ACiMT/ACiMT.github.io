@@ -1351,6 +1351,9 @@ input, select, textarea {
 			#header nav ul li {
 				padding-left: 0;
 				border-left: solid 1px #ffffff;
+				display: flex; /* new */
+				align-items: center; /* This will vertically center the a within the li */
+				justify-content: center; /* This will horizontally center the a within the li */
 			}
 
 				#header nav ul li:first-child {
