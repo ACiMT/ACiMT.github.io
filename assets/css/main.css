@@ -1340,13 +1340,11 @@ input, select, textarea {
 			display: -webkit-flex;
 			display: -ms-flex;
 			display: flex;
-			justify-content: space-around; /* Adjusts alignment */
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
 			border: solid 1px #ffffff;
 			border-radius: 4px;
-			box-sizing: border-box; /* Includes padding and border in the element's total width and height */
 		}
 
 			#header nav ul li {
@@ -1359,17 +1357,15 @@ input, select, textarea {
 				}
 
 				#header nav ul li a {
-				    	display: block;
-				    	min-width: 7.5rem;
-				    	height: 2.75rem;
-				    	line-height: 2.75rem;
-				   	padding: 0 1.25rem; /* Symmetrical horizontal padding */
-				    	text-transform: uppercase;
-				    	letter-spacing: 0.2rem;
-				    	font-size: 0.8rem;
-				    	border-bottom: 0;
-				    	text-align: center; /* Ensures the text is centered within the 'a' element */
-				    	box-sizing: border-box; /* Includes padding and border in the width/height calculations */
+					display: block;
+					min-width: 7.5rem;
+					height: 2.75rem;
+					line-height: 2.75rem;
+					padding: 0 1.25rem 0 1.45rem;
+					text-transform: uppercase;
+					letter-spacing: 0.2rem;
+					font-size: 0.8rem;
+					border-bottom: 0;
 				}
 
 					#header nav ul li a:hover {
