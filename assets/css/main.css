@@ -1346,14 +1346,12 @@ input, select, textarea {
 			padding-left: 0;
 			border: solid 1px #ffffff;
 			border-radius: 4px;
+			box-sizing: border-box; /* Includes padding and border in the element's total width and height */
 		}
 
 			#header nav ul li {
 				padding-left: 0;
 				border-left: solid 1px #ffffff;
-				display: flex; /* new */
-				align-items: center; /* This will vertically center the a within the li */
-				justify-content: center; /* This will horizontally center the a within the li */
 			}
 
 				#header nav ul li:first-child {
@@ -1361,18 +1359,17 @@ input, select, textarea {
 				}
 
 				#header nav ul li a {
-					display: flex; /* new before block*/
-					align-items: center; /* Aligns text vertically */
-    					justify-content: center; /* Aligns text horizontally */
-					min-width: 7.5rem;
-					height: 2.75rem;
-					line-height: 2.75rem;
-					padding: 0 1.25rem 0 1.25rem;
-					text-transform: uppercase;
-					letter-spacing: 0.2rem;
-					font-size: 0.8rem;
-					border-bottom: 0;
-					box-sizing: border-box; /* This ensures the padding is included in the width/height */
+				    	display: block;
+				    	min-width: 7.5rem;
+				    	height: 2.75rem;
+				    	line-height: 2.75rem;
+				   	padding: 0 1.25rem; /* Symmetrical horizontal padding */
+				    	text-transform: uppercase;
+				    	letter-spacing: 0.2rem;
+				    	font-size: 0.8rem;
+				    	border-bottom: 0;
+				    	text-align: center; /* Ensures the text is centered within the 'a' element */
+				    	box-sizing: border-box; /* Includes padding and border in the width/height calculations */
 				}
 
 					#header nav ul li a:hover {
